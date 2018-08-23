@@ -1,0 +1,12 @@
+(module ontology-branch)
+
+(defp ontology-branch
+  :model (chain (seq (. (sym ?concept) subClassOf $arg))
+                (map (transform (. ?c ?_ ?_) $c))
+                (map (ref :self)))
+  :repr  [linetree
+           :orientation :h
+           :node
+           [:div.concept
+             {:on-click (set-resource (alpha (sym $arg)))} (str $arg)]
+           :branches    (tail)])

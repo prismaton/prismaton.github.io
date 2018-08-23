@@ -1,0 +1,10 @@
+(graph ontology-base)
+
+(. Archaea subClassOf life)
+(. Eukaryota subClassOf life)
+(. Excavata subClassOf Eukaryota)
+(. Amoebozoa subClassOf Eukaryota)
+(. Amoeboids subClassOf Amoebozoa)
+(. Slime_moulds subClassOf Amoebozoa)
+(. Opisthokonta subClassOf Eukaryota)
+(. animals subClassOf Opisthokonta)

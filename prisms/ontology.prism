@@ -1,0 +1,6 @@
+(module ontology
+  (:require [ontology-branch :refer [ontology-branch]]))
+
+(defp ontology
+  :model (and ontology-branch)
+  :repr  [:div.ontology $ontology-branch])

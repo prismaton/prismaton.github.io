@@ -1,0 +1,35 @@
+div.playground-panel.output {
+  background-color: hsl(0,0%,55%);
+  color: white;
+}
+
+div.ontology {
+  --border-col: hsl(0,0%,35%);
+  --border-width: 3px;
+  --border-radius: 7px;
+
+  padding: 10px;
+  overflow: hidden;
+}
+
+div.ontology .zc-linetree .line {
+  border: var(--border-width) solid var(--border-col);
+}
+
+div.cells.first > div.h.r.b { border-top-left-radius:    var(--border-radius); }
+div.cells.last  > div.h.r.t { border-bottom-left-radius: var(--border-radius); }
+
+div.ontology .zc-linetree  div.concept {
+  display: inline-block;
+  margin: 5px 0; padding: 0 10px;
+
+  background-color: var(--border-col); color: hsl(0,0%,100%);
+  vertical-align: middle; text-align: center; cursor: pointer;
+  line-height: 40px; height: 40px;
+  text-decoration: underline; font-weight: bold;
+  border-radius: var(--border-radius);
+}
+
+div.ontology .zc-linetree  div.concept:hover {
+  background-color: hsl(0,0%,40%);
+}

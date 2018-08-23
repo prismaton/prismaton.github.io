@@ -1,0 +1,13 @@
+{:source
+ {:service :web-fs, :store :fs, :base-path ""
+  :cond-params
+  {:prism {:sub-dir "prisms/" :ext "prism"}
+   :graph {:sub-dir "alpha-graph/" :ext "al"}
+   :css   {:sub-dir "prism-css/" :ext "css"}}}
+
+ :datasets
+ [{:name      "ontology"
+   :prism     "ontology"
+   :graph     "ontology"
+   :css  "ontology"
+   :root-expr "life"}]}
